@@ -9,6 +9,10 @@ app.get('/',(req,res) =>{
     res.status(200).send(`Hello from nodejs app port ${port}`)
 })
 
+app.get('/users',(req,res) =>{
+    res.status(200).send(`Hi ismail, you created the users`)
+})
+
 app.listen(port,()=>{
     console.log(`app running on http://localhost:${port}`)
 })
